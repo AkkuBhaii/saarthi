@@ -4,4 +4,6 @@ class AssetPaths {
   static const String lights = 'assets/pngs/lights.png';
   static const String openGift = 'assets/pngs/open_gift.png';
   static const String partyEmoji = 'assets/pngs/party_emoji.png';
+  static const String clouds = 'assets/pngs/clouds.png';
+  static const String man = 'assets/pngs/man.png';
 }
