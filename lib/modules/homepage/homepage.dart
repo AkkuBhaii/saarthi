@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../constants/color_constants.dart';
 import '../../constants/string_constants.dart';
+import '../referral_screen/referral_screen.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({
@@ -18,21 +19,25 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              ColorConstants.pinkGradient,
-              ColorConstants.amberGradient,
-            ],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
+          gradient: ColorConstants.mainGradient,
         ),
-        child: const Center(
-          child: Text(
-            StringConstants.tap,
-            style: TextStyle(
-              fontSize: 35,
-              color: ColorConstants.white,
+        child: Center(
+          child: InkWell(
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const ReferralScreen();
+                  },
+                ),
+              );
+            },
+            child: const Text(
+              StringConstants.tap,
+              style: TextStyle(
+                fontSize: 35,
+                color: ColorConstants.white,
+              ),
             ),
           ),
         ),
