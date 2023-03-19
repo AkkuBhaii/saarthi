@@ -6,9 +6,9 @@ class AssetPaths {
   static const String clouds = 'assets/pngs/clouds.png';
   static const String man = 'assets/pngs/man.png';
   static const String emoji = 'assets/gifs/emoji.gif';
-  static const String finalStars = 'assets/gifs/emoji.gif';
-  static const String leftStars = 'assets/gifs/emoji.gif';
-  static const String rightStarsTwo = 'assets/gifs/emoji.gif';
-  static const String rightStars = 'assets/gifs/emoji.gif';
-  static const String starOnly = 'assets/gifs/emoji.gif';
+  static const String finalStars = 'assets/pngs/final_stars.png';
+  static const String leftStars = 'assets/pngs/left_stars.png';
+  static const String rightStarsTwo = 'assets/pngs/right_stars_two.png';
+  static const String rightStars = 'assets/pngs/right_stars.png';
+  static const String starOnly = 'assets/pngs/star_only.png';
 }

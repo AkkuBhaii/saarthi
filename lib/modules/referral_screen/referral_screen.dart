@@ -21,7 +21,7 @@ class _ReferralScreenState extends State<ReferralScreen>
   bool startAnimation = true;
 
   final _animationDuration = const Duration(
-    milliseconds: 2000,
+    milliseconds: 850,
   );
 
   @override
@@ -93,6 +93,54 @@ class _ReferralScreenState extends State<ReferralScreen>
                         20,
                       ),
                     ),
+                  ),
+                ),
+              ),
+              //Left Stars
+              FadeTransition(
+                opacity: animation,
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Image.asset(
+                    AssetPaths.leftStars,
+                    height: 288,
+                    width: 80,
+                  ),
+                ),
+              ),
+              //Only Star
+              FadeTransition(
+                opacity: animation,
+                child: Align(
+                  alignment: Alignment.topLeft,
+                  child: Image.asset(
+                    AssetPaths.starOnly,
+                    height: 400,
+                    width: 100,
+                  ),
+                ),
+              ),
+              //Right Stars
+              FadeTransition(
+                opacity: animation,
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: Image.asset(
+                    AssetPaths.rightStars,
+                    height: 201,
+                    width: 98,
+                  ),
+                ),
+              ),
+              //Right Stars Tw0
+              FadeTransition(
+                opacity: animation,
+                child: Align(
+                  alignment: Alignment.topRight,
+                  child: Image.asset(
+                    AssetPaths.rightStarsTwo,
+                    height: 500,
+                    width: 58,
                   ),
                 ),
               ),
