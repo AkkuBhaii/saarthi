@@ -6,4 +6,5 @@ class AssetPaths {
   static const String partyEmoji = 'assets/pngs/party_emoji.png';
   static const String clouds = 'assets/pngs/clouds.png';
   static const String man = 'assets/pngs/man.png';
+  static const String emoji = 'assets/gifs/emoji.gif';
 }

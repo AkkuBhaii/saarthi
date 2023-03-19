@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:saarthi_animation/modules/final%20_screen/final_screen.dart';
 
 import '../../constants/asset_paths.dart';
 import '../../constants/color_constants.dart';
@@ -244,7 +245,15 @@ class _ReferralScreenState extends State<ReferralScreen>
                 child: FadeTransition(
                   opacity: animation,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const FinalScreen();
+                          },
+                        ),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: ColorConstants.blue,
                       fixedSize: const Size(
