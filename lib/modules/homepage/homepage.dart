@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../constants/color_constants.dart';
 import '../../constants/string_constants.dart';
+import '../../utils.dart';
 import '../referral_screen/referral_screen.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -32,11 +33,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               );
             },
-            child: const Text(
+            child: Text(
               StringConstants.tap,
-              style: TextStyle(
+              style: safeGoogleFont(
+                'Lexend',
                 fontSize: 35,
-                color: ColorConstants.white,
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
               ),
             ),
           ),
