@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:saarthi_animation/modules/final%20_screen/final_screen.dart';
 
 import '../../constants/asset_paths.dart';
 import '../../constants/color_constants.dart';
 import '../../utils.dart';
+import '../final%20_screen/final_screen.dart';
 
 class ReferralScreen extends StatefulWidget {
   const ReferralScreen({
@@ -196,6 +196,7 @@ class _ReferralScreenState extends State<ReferralScreen>
                   ),
                 ),
               ),
+              //Enter Code Widget
               FadeTransition(
                 opacity: animation,
                 child: AnimatedContainer(
@@ -209,6 +210,7 @@ class _ReferralScreenState extends State<ReferralScreen>
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      //Enter Code Text
                       Text(
                         'Enter Code',
                         style: safeGoogleFont(
@@ -223,6 +225,7 @@ class _ReferralScreenState extends State<ReferralScreen>
                       const SizedBox(
                         height: 10,
                       ),
+                      //Code Field
                       Container(
                         height: 38,
                         width: 240,
@@ -239,6 +242,7 @@ class _ReferralScreenState extends State<ReferralScreen>
                   ),
                 ),
               ),
+              //Add Your Buddy Button
               Positioned(
                 bottom: 190,
                 left: 86,
