@@ -17,6 +17,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    var deviceSize = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
@@ -37,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
               StringConstants.tap,
               style: safeGoogleFont(
                 'Lexend',
-                fontSize: 35,
+                fontSize: deviceSize.width * 0.08,
                 fontWeight: FontWeight.w600,
                 color: Colors.white,
               ),
