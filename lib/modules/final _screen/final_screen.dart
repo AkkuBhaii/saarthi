@@ -89,8 +89,8 @@ class _FinalScreenState extends State<FinalScreen>
               //Gradient Box
               Positioned(
                 child: Container(
-                  margin: const EdgeInsets.only(
-                    top: 145,
+                  margin: EdgeInsets.only(
+                    top: fem * 120,
                   ),
                   width: double.infinity,
                   decoration: const BoxDecoration(
@@ -110,16 +110,16 @@ class _FinalScreenState extends State<FinalScreen>
               FadeTransition(
                 opacity: animation,
                 child: AnimatedContainer(
-                  margin: const EdgeInsets.only(
-                    top: 100,
+                  margin: EdgeInsets.only(
+                    top: fem * 80,
                   ),
                   alignment:
                       startAnimation ? Alignment.centerLeft : Alignment.center,
                   duration: _animationDuration,
                   child: Image.asset(
                     AssetPaths.finalStars,
-                    height: 40,
-                    width: 400,
+                    height: fem * 30,
+                    width: fem * 400,
                   ),
                 ),
               ),
@@ -131,16 +131,16 @@ class _FinalScreenState extends State<FinalScreen>
                       ? const EdgeInsets.only(
                           top: 0,
                         )
-                      : const EdgeInsets.only(
-                          top: 100,
+                      : EdgeInsets.only(
+                          top: fem * 80,
                         ),
                   alignment:
                       startAnimation ? Alignment.centerLeft : Alignment.center,
                   duration: _animationDuration,
                   child: Image.asset(
                     AssetPaths.leftStars,
-                    height: 288,
-                    width: 80,
+                    height: fem * 300,
+                    width: fem * 80,
                   ),
                 ),
               ),
@@ -151,8 +151,8 @@ class _FinalScreenState extends State<FinalScreen>
                   alignment: Alignment.topLeft,
                   child: Image.asset(
                     AssetPaths.starOnly,
-                    height: 400,
-                    width: 100,
+                    height: fem * 330,
+                    width: fem * 100,
                   ),
                 ),
               ),
@@ -163,8 +163,8 @@ class _FinalScreenState extends State<FinalScreen>
                   alignment: Alignment.centerRight,
                   child: Image.asset(
                     AssetPaths.rightStars,
-                    height: 201,
-                    width: 98,
+                    height: fem * 201,
+                    width: fem * 98,
                   ),
                 ),
               ),
@@ -175,8 +175,8 @@ class _FinalScreenState extends State<FinalScreen>
                   alignment: Alignment.topRight,
                   child: Image.asset(
                     AssetPaths.rightStarsTwo,
-                    height: 500,
-                    width: 58,
+                    height: fem * 400,
+                    width: fem * 58,
                   ),
                 ),
               ),
@@ -185,15 +185,15 @@ class _FinalScreenState extends State<FinalScreen>
                 opacity: reverseAnimation,
                 child: AnimatedContainer(
                   duration: _animationDuration,
-                  height: startAnimation ? 573 : 800,
-                  width: startAnimation ? 413 : 583,
+                  height: startAnimation ? fem * 573 : fem * 800,
+                  width: startAnimation ? fem * 413 : fem * 583,
                   curve: Curves.easeIn,
                   child: Align(
                     alignment: Alignment.center,
                     child: Image.asset(
                       AssetPaths.lights,
-                      height: 573,
-                      width: 413,
+                      height: fem * 573,
+                      width: fem * 413,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -204,8 +204,8 @@ class _FinalScreenState extends State<FinalScreen>
                 alignment: Alignment.topCenter,
                 child: Image.asset(
                   AssetPaths.boxTop,
-                  height: 216,
-                  width: 351,
+                  height: fem * 180,
+                  width: fem * 351,
                 ),
               ),
               //Man
@@ -215,8 +215,8 @@ class _FinalScreenState extends State<FinalScreen>
                   alignment: Alignment.topCenter,
                   child: Image.asset(
                     AssetPaths.man,
-                    height: 170,
-                    width: 114,
+                    height: fem * 140,
+                    width: fem * 114,
                   ),
                 ),
               ),
@@ -231,8 +231,8 @@ class _FinalScreenState extends State<FinalScreen>
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
-                  margin: const EdgeInsets.only(
-                    bottom: 30,
+                  margin: EdgeInsets.only(
+                    bottom: fem * 30,
                   ),
                   child: Image.asset(
                     AssetPaths.openGift,
@@ -246,15 +246,15 @@ class _FinalScreenState extends State<FinalScreen>
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      //Blue Gifts
+                      //Emoji
                       FadeTransition(
                         opacity: animation,
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(60),
                           child: Image.asset(
                             AssetPaths.emoji,
-                            height: 80,
-                            width: 80,
+                            height: fem * 70,
+                            width: fem * 70,
                           ),
                         ),
                       ),

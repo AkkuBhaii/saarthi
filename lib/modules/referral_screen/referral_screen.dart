@@ -79,8 +79,8 @@ class _ReferralScreenState extends State<ReferralScreen>
               //Gradient Box
               Positioned(
                 child: Container(
-                  margin: const EdgeInsets.only(
-                    top: 145,
+                  margin: EdgeInsets.only(
+                    top: fem * 120,
                   ),
                   width: double.infinity,
                   decoration: const BoxDecoration(
@@ -103,8 +103,8 @@ class _ReferralScreenState extends State<ReferralScreen>
                   alignment: Alignment.centerLeft,
                   child: Image.asset(
                     AssetPaths.leftStars,
-                    height: 288,
-                    width: 80,
+                    height: fem * 300,
+                    width: fem * 80,
                   ),
                 ),
               ),
@@ -115,8 +115,8 @@ class _ReferralScreenState extends State<ReferralScreen>
                   alignment: Alignment.topLeft,
                   child: Image.asset(
                     AssetPaths.starOnly,
-                    height: 400,
-                    width: 100,
+                    height: fem * 330,
+                    width: fem * 100,
                   ),
                 ),
               ),
@@ -127,8 +127,8 @@ class _ReferralScreenState extends State<ReferralScreen>
                   alignment: Alignment.centerRight,
                   child: Image.asset(
                     AssetPaths.rightStars,
-                    height: 201,
-                    width: 98,
+                    height: fem * 201,
+                    width: fem * 98,
                   ),
                 ),
               ),
@@ -139,23 +139,23 @@ class _ReferralScreenState extends State<ReferralScreen>
                   alignment: Alignment.topRight,
                   child: Image.asset(
                     AssetPaths.rightStarsTwo,
-                    height: 500,
-                    width: 58,
+                    height: fem * 400,
+                    width: fem * 58,
                   ),
                 ),
               ),
               //Lights
               AnimatedContainer(
                 duration: _animationDuration,
-                height: startAnimation ? 573 : 800,
-                width: startAnimation ? 413 : 583,
+                height: startAnimation ? fem * 573 : fem * 800,
+                width: startAnimation ? fem * 413 : fem * 583,
                 curve: Curves.easeIn,
                 child: Align(
                   alignment: Alignment.center,
                   child: Image.asset(
                     AssetPaths.lights,
-                    height: 573,
-                    width: 413,
+                    height: fem * 573,
+                    width: fem * 413,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -170,8 +170,8 @@ class _ReferralScreenState extends State<ReferralScreen>
                   duration: _animationDuration,
                   child: Image.asset(
                     AssetPaths.boxTop,
-                    height: 216,
-                    width: 351,
+                    height: fem * 180,
+                    width: fem * 351,
                   ),
                 ),
               ),
@@ -182,8 +182,8 @@ class _ReferralScreenState extends State<ReferralScreen>
                   alignment: Alignment.topCenter,
                   child: Image.asset(
                     AssetPaths.man,
-                    height: 170,
-                    width: 114,
+                    height: fem * 140,
+                    width: fem * 114,
                   ),
                 ),
               ),
@@ -198,8 +198,8 @@ class _ReferralScreenState extends State<ReferralScreen>
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
-                  margin: const EdgeInsets.only(
-                    bottom: 30,
+                  margin: EdgeInsets.only(
+                    bottom: fem * 30,
                   ),
                   child: Image.asset(
                     AssetPaths.openGift,
@@ -209,8 +209,8 @@ class _ReferralScreenState extends State<ReferralScreen>
               //Enter Referral Code Widget
               Align(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 200,
+                  padding: EdgeInsets.symmetric(
+                    vertical: fem * 160,
                   ),
                   child: Column(
                     children: [
@@ -230,8 +230,8 @@ class _ReferralScreenState extends State<ReferralScreen>
                           ),
                         ),
                       ),
-                      const SizedBox(
-                        height: 20,
+                      SizedBox(
+                        height: fem * 18,
                       ),
                       //Blue Gifts
                       FadeTransition(
@@ -249,7 +249,7 @@ class _ReferralScreenState extends State<ReferralScreen>
                 opacity: animation,
                 child: AnimatedContainer(
                   margin: EdgeInsets.only(
-                    top: !startAnimation ? 180 : 0,
+                    top: !startAnimation ? fem * 155 : 0,
                   ),
                   duration: _animationDuration,
                   curve: Curves.easeIn,
@@ -270,13 +270,13 @@ class _ReferralScreenState extends State<ReferralScreen>
                           color: ColorConstants.white,
                         ),
                       ),
-                      const SizedBox(
-                        height: 10,
+                      SizedBox(
+                        height: fem * 6,
                       ),
                       //Code Field
                       Container(
-                        height: 38,
-                        width: 240,
+                        height: fem * 30,
+                        width: fem * 200,
                         decoration: BoxDecoration(
                           color: ColorConstants.white.withOpacity(0.5),
                           borderRadius: const BorderRadius.all(
@@ -292,8 +292,8 @@ class _ReferralScreenState extends State<ReferralScreen>
               ),
               //Add Your Buddy Button
               Positioned(
-                bottom: 190,
-                left: 86,
+                bottom: fem * 155,
+                left: fem * 72,
                 child: FadeTransition(
                   opacity: animation,
                   child: ElevatedButton(
@@ -308,9 +308,9 @@ class _ReferralScreenState extends State<ReferralScreen>
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: ColorConstants.blue,
-                      fixedSize: const Size(
-                        280,
-                        20,
+                      fixedSize: Size(
+                        fem * 230,
+                        fem * 20,
                       ),
                       shape: RoundedRectangleBorder(
                         side: const BorderSide(
