@@ -285,6 +285,16 @@ class _ReferralScreenState extends State<ReferralScreen>
                             ),
                           ),
                         ),
+                        child: Center(
+                          child: Text(
+                            '0000 0000 0000',
+                            style: safeGoogleFont(
+                              'Lexend',
+                              fontSize: fem * 20,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
                       ),
                     ],
                   ),
