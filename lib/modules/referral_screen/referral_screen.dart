@@ -20,7 +20,7 @@ class _ReferralScreenState extends State<ReferralScreen>
   bool startAnimation = true;
 
   final _animationDuration = const Duration(
-    milliseconds: 700,
+    milliseconds: 2000,
   );
 
   @override
@@ -75,6 +75,7 @@ class _ReferralScreenState extends State<ReferralScreen>
           padding: const EdgeInsets.all(12),
           child: Stack(
             children: [
+              //Gradient Box
               Positioned(
                 child: Container(
                   margin: const EdgeInsets.only(
@@ -94,6 +95,7 @@ class _ReferralScreenState extends State<ReferralScreen>
                   ),
                 ),
               ),
+              //Lights
               AnimatedContainer(
                 duration: _animationDuration,
                 height: startAnimation ? 573 : 800,
@@ -109,6 +111,7 @@ class _ReferralScreenState extends State<ReferralScreen>
                   ),
                 ),
               ),
+              //BoxTop
               FadeTransition(
                 opacity: animation,
                 child: AnimatedContainer(
@@ -123,6 +126,7 @@ class _ReferralScreenState extends State<ReferralScreen>
                   ),
                 ),
               ),
+              //Man
               FadeTransition(
                 opacity: animation,
                 child: Align(
@@ -134,12 +138,14 @@ class _ReferralScreenState extends State<ReferralScreen>
                   ),
                 ),
               ),
+              //Clouds
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Image.asset(
                   AssetPaths.clouds,
                 ),
               ),
+              //OpenGift
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
@@ -151,6 +157,7 @@ class _ReferralScreenState extends State<ReferralScreen>
                   ),
                 ),
               ),
+              //Enter Referral Code Widget
               Align(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
@@ -158,54 +165,30 @@ class _ReferralScreenState extends State<ReferralScreen>
                   ),
                   child: Column(
                     children: [
-                      Text(
-                        'ENTER\nREFERRAL CODE',
-                        textAlign: TextAlign.center,
-                        style: safeGoogleFont(
-                          'Lexend',
-                          fontSize: 22 * ffem,
-                          fontWeight: FontWeight.w600,
-                          height: 1.25 * ffem / fem,
-                          letterSpacing: -0.24 * fem,
-                          color: ColorConstants.white,
+                      //Enter Referral Code Text
+                      FadeTransition(
+                        opacity: animation,
+                        child: Text(
+                          'ENTER\nREFERRAL CODE',
+                          textAlign: TextAlign.center,
+                          style: safeGoogleFont(
+                            'Lexend',
+                            fontSize: 22 * ffem,
+                            fontWeight: FontWeight.w600,
+                            height: 1.25 * ffem / fem,
+                            letterSpacing: -0.24 * fem,
+                            color: ColorConstants.white,
+                          ),
                         ),
                       ),
                       const SizedBox(
                         height: 20,
                       ),
-                      Image.asset(
-                        AssetPaths.blueGifts,
-                      ),
-                      const SizedBox(
-                        height: 60,
-                      ),
-                      ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: ColorConstants.blue,
-                          fixedSize: const Size(
-                            280,
-                            20,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            side: const BorderSide(
-                              color: ColorConstants.black,
-                            ),
-                            borderRadius: BorderRadius.circular(
-                              12,
-                            ),
-                          ),
-                        ),
-                        child: Text(
-                          'ADD YOUR BUDDY',
-                          style: safeGoogleFont(
-                            'Lexend',
-                            fontSize: 14 * ffem,
-                            fontWeight: FontWeight.w500,
-                            height: 1.25 * ffem / fem,
-                            letterSpacing: -0.2 * fem,
-                            color: ColorConstants.white,
-                          ),
+                      //Blue Gifts
+                      FadeTransition(
+                        opacity: animation,
+                        child: Image.asset(
+                          AssetPaths.blueGifts,
                         ),
                       ),
                     ],
@@ -216,7 +199,7 @@ class _ReferralScreenState extends State<ReferralScreen>
                 opacity: animation,
                 child: AnimatedContainer(
                   margin: EdgeInsets.only(
-                    top: !startAnimation ? 100 : 0,
+                    top: !startAnimation ? 180 : 0,
                   ),
                   duration: _animationDuration,
                   curve: Curves.easeIn,
@@ -252,6 +235,42 @@ class _ReferralScreenState extends State<ReferralScreen>
                         ),
                       ),
                     ],
+                  ),
+                ),
+              ),
+              Positioned(
+                bottom: 190,
+                left: 86,
+                child: FadeTransition(
+                  opacity: animation,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: ColorConstants.blue,
+                      fixedSize: const Size(
+                        280,
+                        20,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        side: const BorderSide(
+                          color: ColorConstants.black,
+                        ),
+                        borderRadius: BorderRadius.circular(
+                          12,
+                        ),
+                      ),
+                    ),
+                    child: Text(
+                      'ADD YOUR BUDDY',
+                      style: safeGoogleFont(
+                        'Lexend',
+                        fontSize: 14 * ffem,
+                        fontWeight: FontWeight.w500,
+                        height: 1.25 * ffem / fem,
+                        letterSpacing: -0.2 * fem,
+                        color: ColorConstants.white,
+                      ),
+                    ),
                   ),
                 ),
               ),
