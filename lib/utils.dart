@@ -3,15 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class MyCustomScrollBehavior extends MaterialScrollBehavior {
-  @override
-  Set<PointerDeviceKind> get dragDevices => {
-        PointerDeviceKind.touch,
-        PointerDeviceKind.mouse,
-      };
-}
-
-TextStyle safeGoogleFont(
+//Fonts
+TextStyle googleFont(
   String fontFamily, {
   TextStyle? textStyle,
   Color? color,

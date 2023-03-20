@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../constants/asset_paths.dart';
 import '../../constants/color_constants.dart';
+import '../../constants/string_constants.dart';
 import '../../utils.dart';
 import '../final%20_screen/final_screen.dart';
 
@@ -218,9 +219,9 @@ class _ReferralScreenState extends State<ReferralScreen>
                       FadeTransition(
                         opacity: animation,
                         child: Text(
-                          'ENTER\nREFERRAL CODE',
+                          StringConstants.enterReferralCode,
                           textAlign: TextAlign.center,
-                          style: safeGoogleFont(
+                          style: googleFont(
                             'Lexend',
                             fontSize: 22 * ffem,
                             fontWeight: FontWeight.w600,
@@ -260,8 +261,8 @@ class _ReferralScreenState extends State<ReferralScreen>
                     children: [
                       //Enter Code Text
                       Text(
-                        'Enter Code',
-                        style: safeGoogleFont(
+                        StringConstants.enterCode,
+                        style: googleFont(
                           'Lexend',
                           fontSize: 18 * ffem,
                           fontWeight: FontWeight.w500,
@@ -288,10 +289,10 @@ class _ReferralScreenState extends State<ReferralScreen>
                         child: Center(
                           child: Text(
                             '0000 0000 0000',
-                            style: safeGoogleFont(
+                            style: googleFont(
                               'Lexend',
                               fontSize: fem * 20,
-                              color: Colors.black,
+                              color: ColorConstants.black,
                             ),
                           ),
                         ),
@@ -332,8 +333,8 @@ class _ReferralScreenState extends State<ReferralScreen>
                       ),
                     ),
                     child: Text(
-                      'ADD YOUR BUDDY',
-                      style: safeGoogleFont(
+                      StringConstants.addYourBuddy,
+                      style: googleFont(
                         'Lexend',
                         fontSize: 14 * ffem,
                         fontWeight: FontWeight.w500,

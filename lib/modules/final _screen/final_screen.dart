@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../constants/asset_paths.dart';
 import '../../constants/color_constants.dart';
+import '../../constants/string_constants.dart';
 import '../../utils.dart';
 
 class FinalScreen extends StatefulWidget {
@@ -262,9 +263,9 @@ class _FinalScreenState extends State<FinalScreen>
                         height: 20,
                       ),
                       Text(
-                        'Your Referral Code\nAccepted',
+                        StringConstants.yourReferralCodeAccepted,
                         textAlign: TextAlign.center,
-                        style: safeGoogleFont(
+                        style: googleFont(
                           'Lexend',
                           fontSize: 22 * ffem,
                           fontWeight: FontWeight.w600,

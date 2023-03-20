@@ -36,11 +36,11 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: Text(
               StringConstants.tap,
-              style: safeGoogleFont(
+              style: googleFont(
                 'Lexend',
                 fontSize: deviceSize.width * 0.08,
                 fontWeight: FontWeight.w600,
-                color: Colors.white,
+                color: ColorConstants.white,
               ),
             ),
           ),
